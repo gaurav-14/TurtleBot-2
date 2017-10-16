@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+  <remap from="image" to="camera/depth/image"/>
+  </node>
+
+  
+
+  <node pkg="turtle_tf" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+   </node>
+
+  <test test-name="test_dtl" pkg="depthimage_to_laserscan" type="test_dtl" />
+</launch>

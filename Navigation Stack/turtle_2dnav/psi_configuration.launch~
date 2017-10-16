@@ -1,0 +1,8 @@
+<launch>
+  
+
+ <node name="keyboard_tele" pkg="psi_odometry" type="keyboard_tele" />
+ <node name="odometry" pkg="psi_odometry" type="odometry" />
+    
+ 
+</launch>
